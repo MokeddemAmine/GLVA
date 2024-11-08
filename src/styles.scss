@@ -25,6 +25,11 @@ body {
   font-style: normal;
 }
 
+a{
+  color:white !important;
+  text-decoration: none !important;
+}
+
 .navbar {
   .nav-item:not(.dropdown){
     .nav-link {
@@ -36,15 +41,20 @@ body {
         .fa-globe{
           color:white !important;
         }
+        &::after{
+          width: calc(100% - 16px);
+        }
       }
       &::after{
         content:'';
         position:absolute;
-        top:100%;
-        left:0;
-        background-color: white;
-        height: 1px;
-        width: 100%;
+        top:90%;
+        left:50%;
+        transform: translateX(-50%);
+        background-color: #FF6F00;
+        height: 3px;
+        width: 0;
+        transition: .5s;
       }
     }
   }

@@ -1,0 +1,52 @@
+// Import Bootstrap functions and variables
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Customize theme colors by adding a new color
+$theme-colors: (
+  "primary": #007BFF,
+  "secondary": #FF6F00,
+  "success": #198754,
+  "info": #0dcaf0,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #F8F9FA,
+  "dark": #212529,
+);
+
+// Import the rest of Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+  .nav-item:not(.dropdown){
+    .nav-link {
+      position:relative;
+      border-radius:1rem;
+      transition: .5s;
+      &:hover{
+        color: #FF6F00 !important;
+        .fa-globe{
+          color:white !important;
+        }
+      }
+      &::after{
+        content:'';
+        position:absolute;
+        top:100%;
+        left:0;
+        background-color: white;
+        height: 1px;
+        width: 100%;
+      }
+    }
+  }
+  
+}

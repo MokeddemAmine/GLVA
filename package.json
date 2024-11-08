@@ -1,0 +1,20 @@
+{
+  "name": "glva-front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.80.6",
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
